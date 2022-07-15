@@ -45,12 +45,13 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .slideImg {
     display: flex;
     position: absolute;
     left: 17px;
+    /* left: -232px; */
 }
 .img {
     width: 228px;
