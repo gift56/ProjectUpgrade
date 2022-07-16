@@ -5,7 +5,17 @@
 }
 .fa {
     font-family: "Font Awesome 6 Free" !important;
-    color: red;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.areaSpan{
+    position: relative;
+}
+.IconFa{
+    position: absolute;
+    top: 211px;
+    left: 210px;
 }
 body {
     display: flex;
