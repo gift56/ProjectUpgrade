@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.fa {
+    font-family: "Font Awesome 6 Free" !important;
+    color: red;
+}
 body {
     display: flex;
     justify-content: center;
