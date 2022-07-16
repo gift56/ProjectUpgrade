@@ -9,13 +9,18 @@
     font-size: 18px;
     cursor: pointer;
 }
-.areaSpan{
+.areaSpan {
     position: relative;
 }
-.IconFa{
+.IconFa {
     position: absolute;
     top: 211px;
     left: 210px;
+}
+.leftP {
+    position: absolute;
+    top: 211px;
+    left: 6px;
 }
 body {
     display: flex;
@@ -44,12 +49,15 @@ body {
 .slideImg {
     display: flex;
     position: absolute;
-    left: 17px;
+    left: -488px;
     transition: left 300ms ease-in-out;
 }
 .img {
-    width: 228px;
+    width: 227px;
     height: 427px;
     border-radius: 30px;
     margin-right: 25px;
+}
+.lastImg {
+    width: 223px;
 }
