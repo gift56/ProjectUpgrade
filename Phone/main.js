@@ -1,13 +1,13 @@
 const slides = document.querySelector(".slideImg");
-const Next = document.getElementById("Next");
-const Prev = document.getElementById("Prev");
-
-// Prev.addEventListener('click', () => {
-//     slides.style.left = "17px";
-// })
+Next2.addEventListener('click', () => {
+    slides.style.left = "-488px";
+})
 Next.addEventListener('click', () => {
     slides.style.left = "-232px";
 })
-// More.addEventListener('click', () => {
-//     slides.style.left = "-488px";
-// })
+Prev2.addEventListener('click', () => {
+    slides.style.left = "-232px";
+})
+Prev.addEventListener('click', () => {
+    slides.style.left = "17px";
+})

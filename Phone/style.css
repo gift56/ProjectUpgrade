@@ -49,7 +49,7 @@ body {
 .slideImg {
     display: flex;
     position: absolute;
-    left: -488px;
+    left: 17px;
     transition: left 300ms ease-in-out;
 }
 .img {
@@ -58,6 +58,6 @@ body {
     border-radius: 30px;
     margin-right: 25px;
 }
-.lastImg {
+.lastImg{
     width: 223px;
 }
