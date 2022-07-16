@@ -20,7 +20,13 @@ header {
     background-color: var(--secondary-color);
     padding: 1rem;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+}
+header > img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
 }
 .search {
     background-color: transparent;
@@ -106,4 +112,12 @@ main {
 
 .movie:hover .overview {
     transform: translateY(0);
+}
+@media screen and (max-width: 340px) {
+    .search {
+        padding: 0.5rem 10px;
+    }
+    header {
+        padding: 10px;
+    }
 }
