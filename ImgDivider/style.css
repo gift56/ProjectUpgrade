@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+.box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+}
+.box span {
+    position: absolute;
+    inset: 0;
+    transition: 500ms;
+    background: url(Fb.jpg);
+    background-size: cover;
+}
+.box span:nth-child(1) {
+    clip-path: polygon(0 0, 50% 0, 51% 59%, 0 59%);
+}
+.box span:nth-child(2) {
+    clip-path: polygon(49% 0, 100% 0, 100% 55%, 49% 55%);
+}
+.box span:nth-child(3) {
+    clip-path: polygon(0 52%, 53% 52%, 53% 100%, 0 100%);
+}
+.box span:nth-child(4) {
+    clip-path: polygon(53% 52%, 100% 53%, 100% 100%, 53% 100%);
+}
+
+.box:hover span:nth-child(1) {
+    transform: translate(-40px, -75px) rotate(-15deg);
+}
+.box:hover span:nth-child(2) {
+    transform: translate(40px, -100px) rotate(25deg);
+}
+.box:hover span:nth-child(3) {
+    transform: translate(-40px, 80px) rotate(15deg);
+}
