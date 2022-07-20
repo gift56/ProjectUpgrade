@@ -18,4 +18,53 @@ body {
 .outer {
     margin: 0 50px;
     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    position: relative;
+}
+.button {
+    width: 220px;
+    height: 70px;
+    border-radius: 50px;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.outer button {
+    background-color: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button button {
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+}
+.circle button {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.outer button,
+.outer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.outer span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+.button span {
+    border-radius: 50px;
+}
+.circle span {
+    border-radius: 50%;
 }
