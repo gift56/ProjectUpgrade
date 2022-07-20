@@ -12,12 +12,13 @@ body {
 }
 .center {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 .outer {
     margin: 0 50px;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    background: #111;
     position: relative;
 }
 .button {
@@ -75,8 +76,9 @@ body {
 .outer span:nth-child(2) {
     filter: blur(14px);
 }
-.outer {
+.outer:hover {
     animation: rotate 1.5s linear infinite;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
 }
 @keyframes rotate {
     0% {
@@ -84,5 +86,10 @@ body {
     }
     100% {
         filter: hue-rotate(360deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    .outer {
+        margin: 50px 10px;
     }
 }
