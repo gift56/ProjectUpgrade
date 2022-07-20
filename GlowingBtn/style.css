@@ -17,4 +17,5 @@ body {
 }
 .outer {
     margin: 0 50px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
 }
