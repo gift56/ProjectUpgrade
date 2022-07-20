@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer {
+    margin: 0 50px;
+}
