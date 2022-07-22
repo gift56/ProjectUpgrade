@@ -34,3 +34,8 @@ body {
     transform: translateY(-50%);
     font-size: 1.5rem;
 }
+.contextBx .context {
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+}
