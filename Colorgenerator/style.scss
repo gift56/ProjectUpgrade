@@ -1,4 +1,4 @@
-@mixin bubble_shape ($width: 4px) {
+@mixin bubble_shape($width: 4px) {
     border-radius: 50%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.12);
@@ -6,20 +6,20 @@
     border-width: $width;
 }
 
-@mixin bubble ($size, $top, $left) {
+@mixin bubble($size, $top, $left) {
     height: $size;
     width: $size;
     top: $top;
     left: $left;
 }
 
-@mixin bubble_hollow ($size, $top, $left) {
-    @include bubble ($size, $top, $left);
+@mixin bubble_hollow($size, $top, $left) {
+    @include bubble($size, $top, $left);
     background-color: transparent;
     border-style: solid;
 }
 
-@mixin triangle ($height, $width, $top, $left) {
+@mixin triangle($height, $width, $top, $left) {
     border-left: ($height/2) solid transparent;
     border-right: ($height/2) solid transparent;
     border-bottom: $width solid rgba(0, 0, 0, 0.12);
@@ -28,9 +28,9 @@
     top: $top;
 }
 
-@mixin triangle_hollow ($height, $width, $top, $left) {
-    @include triangle( $height, $width, $top, $left );
-    &:after {    
+@mixin triangle_hollow($height, $width, $top, $left) {
+    @include triangle($height, $width, $top, $left);
+    &:after {
         content: " ";
         display: block;
         position: absolute;
@@ -53,15 +53,15 @@
     }
 }
 
-@mixin block ($height, $width, $top, $left) {
+@mixin block($height, $width, $top, $left) {
     height: $height;
     width: $width;
     top: $top;
     left: $left;
 }
 
-@mixin block_hollow ($height, $width, $top, $left) {
-    @include block ($height, $width, $top, $left);
+@mixin block_hollow($height, $width, $top, $left) {
+    @include block($height, $width, $top, $left);
     & .inner {
         background-color: transparent !important;
         border-style: solid;
@@ -196,10 +196,10 @@
             width: 100%;
             position: absolute;
         }
-        &:nth-child(2n+1) .inner-2 {
+        &:nth-child(2n + 1) .inner-2 {
             left: -200%;
         }
-        &:nth-child(2n+2) .inner-2 {
+        &:nth-child(2n + 2) .inner-2 {
             left: 200%;
         }
     }
@@ -217,7 +217,7 @@
     }
     .block-5 {
         @include block(15px, 15px, 109px, 45px);
-        .inner { 
+        .inner {
             border-radius: 50%;
         }
     }
@@ -225,8 +225,8 @@
         @include block(9px, 27px, 135px, 19px);
     }
     .block-7 {
-        @include block(12px, 12px, 144px, 60px); 
-        .inner { 
+        @include block(12px, 12px, 144px, 60px);
+        .inner {
             border-radius: 50%;
             border-style: solid;
             box-sizing: border-box;
@@ -253,7 +253,7 @@
     }
     .block-13 {
         @include block(8px, 8px, 278px, 50px);
-        .inner {    
+        .inner {
             border-radius: 50%;
         }
     }
@@ -266,16 +266,17 @@
 }
 
 body {
-    background-color: #28DAD4;
+    background-color: #28dad4;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 a {
     cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
-    &:focus, &:active {
-    cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
+    &:focus,
+    &:active {
+        cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
     }
 }
 .container {
@@ -285,13 +286,15 @@ a {
     height: 100%;
     width: 100%;
 }
-.waves, .mounts {
+.waves,
+.mounts {
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;
 }
-.waves div, .mounts div {
+.waves div,
+.mounts div {
     position: absolute;
     width: 100%;
 }
@@ -302,7 +305,7 @@ a {
     top: 77px;
     height: 151px;
     background: url(https://greghub.github.io/coloron/public/svg/clouds.svg) repeat-x;
-    background-position-x: 170px; 
+    background-position-x: 170px;
 }
 .top_wave {
     background: url(https://greghub.github.io/coloron/public/svg/top_wave.png) repeat-x 0 -1px;
@@ -374,8 +377,7 @@ a {
     height: 1px;
     background-color: rgba(255, 227, 69, 1);
     border-radius: 50%;
-    box-shadow: 0 0 32px 32px rgba(255, 227, 69, 1), 
-                0 0 150px 150px rgba(103, 244, 210, 0.4);
+    box-shadow: 0 0 32px 32px rgba(255, 227, 69, 1), 0 0 150px 150px rgba(103, 244, 210, 0.4);
 }
 .small-glow {
     z-index: 99;
@@ -393,7 +395,7 @@ a {
 .sticks {
     z-index: 1011;
     outline: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .stick {
     height: 362px;
@@ -406,29 +408,31 @@ a {
     margin-right: 90px;
     transition: background-color 0.4s ease;
     cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
-    &:focus, &:active {
+    &:focus,
+    &:active {
         cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
     }
 }
 .stick.red {
-    background-color: #FF4571;
+    background-color: #ff4571;
 }
 .stick.yellow {
-    background-color: #FFD145;
+    background-color: #ffd145;
 }
 .stick.purple {
-    background-color: #8260F6;
+    background-color: #8260f6;
 }
 .stick.inactive {
-    background-color: #4C4660;
+    background-color: #4c4660;
 }
-.ball, .ball-demo {
+.ball,
+.ball-demo {
     background: url(https://greghub.github.io/coloron/public/svg/ball.svg) right bottom;
     background-size: 64px 64px;
     width: 53px;
     height: 53px;
     z-index: 1011;
-    background-color: #FF4571;
+    background-color: #ff4571;
     border-radius: 50%;
 }
 .ball {
@@ -436,7 +440,7 @@ a {
 }
 .controls {
     z-index: 999999;
-    position: relative
+    position: relative;
 }
 .game-full-flex {
     position: fixed;
@@ -476,8 +480,8 @@ a {
     .logo-holder {
         width: 513px;
         height: 162px;
-        background-color: #4C4660;
-        border: 4px solid #FF4571;
+        background-color: #4c4660;
+        border: 4px solid #ff4571;
         border-radius: 68px;
         text-align: center;
         margin-top: -10%;
@@ -497,7 +501,7 @@ a {
         }
         .play-button {
             display: inline-block;
-            background-color: #FF4571;
+            background-color: #ff4571;
             border: 4px solid #fff;
             border-radius: 100px;
             color: #fff;
@@ -510,14 +514,14 @@ a {
             line-height: 56px;
             text-decoration: none;
             &:hover {
-                background-color: lighten(#FF4571, 5%);
+                background-color: lighten(#ff4571, 5%);
             }
         }
         .hint {
             color: #fff;
             font-size: 20px;
             span {
-                color: #FF4571;
+                color: #ff4571;
             }
         }
     }
@@ -525,7 +529,8 @@ a {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        .section-1, .section-3 {
+        .section-1,
+        .section-3 {
             flex: 1;
             .content {
                 justify-content: center;
@@ -550,32 +555,33 @@ a {
             transition: background-color 0.4s ease;
             &.bar-1 {
                 height: 180px;
-                background: #FF4571;
+                background: #ff4571;
             }
             &.bar-2 {
                 height: 120px;
-                background: #FFD145;
+                background: #ffd145;
             }
             &.bar-3 {
                 height: 150px;
-                background: #4C4660;
+                background: #4c4660;
             }
         }
         .section-2 {
             .bar {
                 cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
-                &:focus, &:active {
+                &:focus,
+                &:active {
                     cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
                 }
             }
         }
         .section-3 {
             .ball-demo {
-                background-color: #815FF8;
+                background-color: #815ff8;
             }
             .bar-1 {
                 height: 120px;
-                background-color: #815FF8;
+                background-color: #815ff8;
             }
         }
     }
@@ -583,7 +589,7 @@ a {
 .stop-game {
     justify-content: center;
     .score-container {
-        background-color: #4C4660;
+        background-color: #4c4660;
         width: 433px;
         height: 386px;
         border-radius: 38px;
@@ -597,14 +603,14 @@ a {
             font-size: 64px;
         }
         .final-score {
-            color: #FFE345;
+            color: #ffe345;
             font-weight: 900;
             font-size: 130px;
             letter-spacing: -6px;
             line-height: 110px;
         }
         .result {
-            color: #FF4571;
+            color: #ff4571;
             text-transform: uppercase;
             font-weight: 700;
             font-size: 30px;
@@ -617,13 +623,13 @@ a {
             background: #fff;
             padding: 8px 20px;
             border-radius: 4px;
-            color: #55ACEE;
+            color: #55acee;
             text-decoration: none;
             font-size: 18px;
             line-height: 24px;
             display: inline-block;
             &:hover {
-                background-color: #55ACEE;
+                background-color: #55acee;
                 color: #fff;
             }
             i {
@@ -634,7 +640,7 @@ a {
             }
         }
         .play-again {
-            background-color: #FF4571;
+            background-color: #ff4571;
             border: 2px solid #fff;
             color: #fff;
             text-decoration: none;
@@ -647,11 +653,11 @@ a {
             margin: 6px 4px;
             display: inline-block;
             &:hover {
-                background-color: lighten(#FF4571, 5%);
+                background-color: lighten(#ff4571, 5%);
             }
         }
         .main-menu {
-            background-color: #44BFA3;
+            background-color: #44bfa3;
             border: 2px solid #fff;
             color: #fff;
             text-decoration: none;
@@ -664,7 +670,7 @@ a {
             margin: 6px 4px;
             display: inline-block;
             &:hover {
-                background-color: lighten(#44BFA3, 5%);
+                background-color: lighten(#44bfa3, 5%);
             }
         }
     }
@@ -690,19 +696,19 @@ a {
         position: fixed;
         right: 54px;
         top: 20px;
-        color: #33485F;
+        color: #33485f;
         font-size: 90px;
         font-weight: 900;
         letter-spacing: -0.1em;
     }
-    .learn-to-play {    
+    .learn-to-play {
         z-index: 9999;
         display: inline-block;
         text-align: center;
         position: relative;
         top: 20%;
         font-size: 48px;
-        color: rgba(255,255,255,0.85);
+        color: rgba(255, 255, 255, 0.85);
         font-weight: 700;
         letter-spacing: -2px;
         opacity: 0;
@@ -710,29 +716,29 @@ a {
 }
 
 .splash {
-  display: none;
+    display: none;
 }
 
 @media print {
-  .splash {
-    display: block;
-    position: fixed;
-    z-index: 99999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #28DAD4;
-    background-image: url(https://greghub.github.io/coloron/public/images/coloron-image.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  } 
+    .splash {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #28dad4;
+        background-image: url(https://greghub.github.io/coloron/public/images/coloron-image.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .nominee {
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 9999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
 }
