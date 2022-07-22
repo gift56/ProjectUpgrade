@@ -13,5 +13,8 @@ body {
     background-color: #bedfe8;
 }
 .accordium {
-    width: 800px;
+    max-width: 800px;
+}
+.contextBx{
+    position: relative;
 }
