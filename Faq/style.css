@@ -15,7 +15,13 @@ body {
 .accordium {
     max-width: 800px;
 }
-.contextBx{
+.contextBx {
     position: relative;
     margin: 10px 20px;
+}
+.contextBx .label {
+    position: relative;
+    padding: 10px;
+    background-color: #2694af;
+    color: #fff;
 }
