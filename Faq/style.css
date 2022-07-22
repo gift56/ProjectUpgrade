@@ -42,3 +42,7 @@ body {
     transition: 0.5s ease;
     overflow-y: auto;
 }
+.contextBx.active .context {
+    height: 150px;
+    padding: 10px;
+}
