@@ -34,6 +34,9 @@ body {
     transform: translateY(-50%);
     font-size: 1.5rem;
 }
+.contextBx.active .label::before {
+    content: "-";
+}
 .contextBx .context {
     position: relative;
     background-color: #fff;
