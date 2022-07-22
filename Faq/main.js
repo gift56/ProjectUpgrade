@@ -1,0 +1,1 @@
+const accordium = document.querySelector('.accordium');
