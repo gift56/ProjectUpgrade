@@ -36,6 +36,8 @@ body {
 }
 .contextBx .context {
     position: relative;
-    padding: 10px;
     background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
 }
