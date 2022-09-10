@@ -31,4 +31,15 @@ body {
     outline: none;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 5px white, inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #0074cf;
+    box-shadow: -407px 0 0 400px #0074cf;
+    cursor: pointer;
 }
