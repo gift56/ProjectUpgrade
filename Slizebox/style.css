@@ -16,7 +16,6 @@ body {
     );
     height: 100vh;
     overflow: hidden;
-
     font-family: monospace;
     font-weight: bold;
     letter-spacing: 0.06em;
@@ -55,6 +54,7 @@ body {
     top: 0;
     right: 0;
     padding: 0.8em 0.65em;
+    cursor: pointer;
 }
 
 .pause-btn > div {
@@ -223,6 +223,7 @@ button {
     color: #fff;
     opacity: 0.75;
     transition: opacity 0.3s;
+    cursor: pointer;
 }
 
 button::before {
