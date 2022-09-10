@@ -43,3 +43,16 @@ body {
     box-shadow: -407px 0 0 400px #0074cf;
     cursor: pointer;
 }
+#rangeValue {
+    position: relative;
+    background-color: #0074cf;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.25);
+}
