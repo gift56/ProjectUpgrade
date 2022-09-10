@@ -9,8 +9,22 @@
   </head>
   <body>
     <div class="box">
-      <input type="range" class="range" value="0" min="0" max="100" />
+      <input
+        type="range"
+        class="range"
+        value="0"
+        min="0"
+        max="100"
+        onmousemove="rangeSlider(this.value)"
+      />
+
       <span id="rangeValue">0</span>
     </div>
+
+    <script>
+      const rangeSlider = (value) => {
+        rangeValue.innerHTML = value;
+      };
+    </script>
   </body>
 </html>

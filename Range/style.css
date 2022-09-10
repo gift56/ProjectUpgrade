@@ -56,3 +56,11 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.1),
         inset -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
+@media screen and (max-width: 500px) {
+    .box {
+        width: 100%;
+    }
+    .range {
+        width: 100%;
+    }
+}
