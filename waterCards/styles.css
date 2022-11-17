@@ -74,4 +74,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 40px;
+    gap: 1rem;
 }
