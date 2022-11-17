@@ -103,3 +103,6 @@ body {
     opacity: 0.75;
     transition: all 500ms ease;
 }
+.container .drop .content a:hover {
+    opacity: 1;
+}
