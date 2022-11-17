@@ -22,6 +22,8 @@ body {
     padding: 50px 0;
     gap: 40px 60px;
 }
-.container .drop{
-position: relative;
+.container .drop {
+    position: relative;
+    width: 350px;
+    height: 350px;
 }
