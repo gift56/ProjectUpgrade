@@ -28,6 +28,7 @@ body {
     height: 350px;
     box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
         25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: all 500ms ease-in-out;
 }
 .container .drop:nth-child(1) {
     border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
@@ -37,4 +38,7 @@ body {
 }
 .container .drop:nth-child(3) {
     border-radius: 35% 65% 69% 31% / 57% 59% 41% 43%;
+}
+.container .drop:hover {
+    border-radius: 50%;
 }
