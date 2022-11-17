@@ -6,13 +6,17 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background-color: #eff0f4;
 }
-.container{
+.container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
