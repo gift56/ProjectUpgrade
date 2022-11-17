@@ -53,3 +53,14 @@ body {
     border-radius: 50%;
     opacity: 0.9;
 }
+.container .drop::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
