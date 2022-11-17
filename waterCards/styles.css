@@ -13,3 +13,6 @@ body{
     min-height: 100vh;
     background-color: #eff0f4;
 }
+.container{
+    position: relative;
+}
