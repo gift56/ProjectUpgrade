@@ -42,3 +42,6 @@ body {
 .container .drop:hover {
     border-radius: 50%;
 }
+.container .drop::before {
+    content: "";
+}
