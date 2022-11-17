@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 body {
     display: flex;
@@ -93,4 +94,12 @@ body {
 }
 .container .drop .content a {
     position: relative;
+    padding: 10px 25px;
+    background-color: var(--clr);
+    color: white;
+    border-radius: 25px;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    opacity: 0.75;
+    transition: all 500ms ease;
 }
