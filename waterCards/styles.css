@@ -26,6 +26,5 @@ body {
     position: relative;
     width: 350px;
     height: 350px;
-    background-color: #333;
-    box-shadow: inset 20px 20px 20px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05);
 }
