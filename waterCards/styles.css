@@ -20,4 +20,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0;
+    gap: 40px 60px;
+}
+.container .drop{
+position: relative;
 }
