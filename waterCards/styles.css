@@ -45,6 +45,8 @@ body {
 .container .drop::before {
     content: "";
     position: absolute;
+    top: 50px;
+    left: 85px;
     width: 35px;
     height: 35px;
     background-color: #fff;
