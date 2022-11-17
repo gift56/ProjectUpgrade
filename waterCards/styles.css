@@ -56,10 +56,10 @@ body {
 .container .drop::after {
     content: "";
     position: absolute;
-    top: 50px;
-    left: 85px;
-    width: 35px;
-    height: 35px;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     border-radius: 50%;
     opacity: 0.9;
